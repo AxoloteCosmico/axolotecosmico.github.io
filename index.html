@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AxoloteShoots | Fotografía en el oriente de CDMX y Edomex</title>
+<meta name="description" content="Sesiones de retrato, catálogos para emprendedores y fotografía artística en el oriente de CDMX y Estado de México.">
+<meta property="og:title" content="AxoloteShoots">
+<meta property="og:description" content="Retrato, catálogos para emprendedores y fotos artísticas. Oriente de CDMX y Edomex.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#06040f">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E📸%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600&family=Unbounded:wght@600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#06040f;--panel:#120b26;--panel2:#1a1036;--line:#30235e;--violet:#8b3dff;--blue:#2c6bff;--lilac:#d6c7ff;--text:#f3efff;--mute:#a99ecb;--grad:linear-gradient(100deg,#8b3dff,#2c6bff)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{background:var(--bg);color:var(--text);font:400 1.0625rem/1.65 Figtree,system-ui,sans-serif;overflow-x:hidden}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--lilac);outline-offset:3px;border-radius:6px}
+.wrap{width:min(1080px,92%);margin-inline:auto}
+section{padding:clamp(3.5rem,8vw,6rem) 0}
+h1,h2,h3{font-family:Unbounded,Figtree,sans-serif;line-height:1.12}
+h2{font-size:clamp(1.6rem,4.4vw,2.5rem);font-weight:800;margin-bottom:.7rem}
+h3{font-size:1.25rem;font-weight:600;margin-bottom:.5rem}
+.lead{color:var(--mute);max-width:58ch;margin-bottom:2.2rem}
+.gt{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+
+/* nav */
+header{position:sticky;top:0;z-index:20;background:rgba(6,4,15,.82);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;height:62px}
+.logo{font:800 1rem Unbounded,sans-serif;text-decoration:none}
+nav{display:flex;gap:1.4rem;align-items:center}
+nav a{text-decoration:none;color:var(--mute);font-weight:600;font-size:.95rem}
+nav a:hover{color:var(--text)}
+@media(max-width:760px){nav a:not(.btn){display:none}}
+
+/* botones */
+.btn{display:inline-block;padding:.8rem 1.4rem;border-radius:999px;background:var(--grad);color:#fff!important;font-weight:600;text-decoration:none;border:0;cursor:pointer;font-size:1rem;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn.ghost{background:transparent;border:2px solid var(--violet);color:var(--text)!important}
+.btn.sm{padding:.5rem 1.1rem;font-size:.9rem}
+
+/* hero */
+.hero{min-height:calc(100svh - 62px);display:grid;align-items:center;padding:3rem 0;background:radial-gradient(55% 50% at 88% 15%,rgba(139,61,255,.32),transparent),radial-gradient(50% 45% at 8% 95%,rgba(44,107,255,.26),transparent)}
+.vf{position:relative;padding:clamp(1.6rem,4vw,3.2rem)}
+.vf i{position:absolute;width:36px;height:36px;border:3px solid var(--lilac);animation:snap .7s cubic-bezier(.2,.9,.3,1) both}
+.vf i:nth-child(1){top:0;left:0;border-right:0;border-bottom:0}
+.vf i:nth-child(2){top:0;right:0;border-left:0;border-bottom:0}
+.vf i:nth-child(3){bottom:0;left:0;border-right:0;border-top:0}
+.vf i:nth-child(4){bottom:0;right:0;border-left:0;border-top:0}
+@keyframes snap{from{opacity:0;transform:scale(2.4)}to{opacity:1;transform:none}}
+.flash{position:fixed;inset:0;background:#fff;pointer-events:none;z-index:50;animation:flash .7s .3s ease-out both}
+@keyframes flash{from{opacity:.5}to{opacity:0}}
+h1{font-size:clamp(1.55rem,7.4vw,5.4rem);font-weight:800;overflow-wrap:anywhere;letter-spacing:-.02em;margin-bottom:1.2rem}
+.hero p{font-size:clamp(1.05rem,2.4vw,1.35rem);max-width:34ch;margin-bottom:1.8rem}
+.hero .row{display:flex;flex-wrap:wrap;gap:.8rem}
+
+/* servicios */
+.sv{display:grid;gap:1.2rem}
+@media(min-width:860px){.sv{grid-template-columns:1fr 1fr}.sv .wide{grid-column:1/-1}}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:22px;padding:clamp(1.4rem,3vw,2.2rem)}
+.card>p{color:var(--mute);margin-bottom:1.2rem}
+.opts{display:grid;gap:1rem;margin-bottom:1rem}
+@media(min-width:700px){.opts{grid-template-columns:1fr 1fr}}
+.opt{background:var(--panel2);border-radius:12px;padding:1.2rem;border:1px solid var(--line)}
+.opt small{color:var(--mute);display:block}
+.price{font:800 clamp(1.9rem,4vw,2.6rem) Unbounded,sans-serif;margin:.3rem 0 .6rem;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.note{font-size:.95rem;color:var(--lilac)}
+ul.chk{list-style:none;display:grid;gap:.5rem;margin:1rem 0}
+ul.chk li{padding-left:1.7rem;position:relative}
+ul.chk li:before{content:"";position:absolute;left:0;top:.5em;width:.7rem;height:.7rem;border-radius:50%;background:var(--grad)}
+.pay{display:flex;gap:6px;margin:.6rem 0 1.4rem}
+.pay div{padding:.7rem .8rem;border-radius:8px;font-size:.88rem;line-height:1.35}
+.pay b{display:block;font:600 1.1rem Unbounded,sans-serif}
+.pay div:nth-child(1){flex:2;background:#5d22b8}
+.pay div:nth-child(2){flex:1;background:#4435c9}
+.pay div:nth-child(3){flex:1;background:#2c52d6}
+.adult{font-size:.88rem;color:var(--mute);margin-top:1rem}
+
+/* portafolio */
+.ph-head{display:flex;justify-content:space-between;align-items:end;gap:1rem;flex-wrap:wrap}
+.arrows{display:flex;gap:.5rem;margin-bottom:2.2rem}
+.arrows button{width:46px;height:46px;border-radius:50%;border:2px solid var(--violet);background:transparent;color:var(--text);font-size:1.3rem;cursor:pointer}
+.arrows button:hover{background:var(--violet)}
+.car{display:flex;gap:1rem;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:1rem;scrollbar-width:thin;scrollbar-color:var(--violet) var(--panel)}
+.slide{flex:0 0 min(76%,310px);scroll-snap-align:start}
+.ph{aspect-ratio:4/5;border-radius:16px;position:relative;overflow:hidden;background:linear-gradient(160deg,#2c1166,#0f2c78);display:grid;place-items:center;color:var(--lilac);font-size:.9rem;text-align:center;padding:1rem}
+.ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+figcaption{padding-top:.7rem;font-weight:600}
+
+/* proceso */
+.steps{display:grid;gap:1rem;list-style:none;counter-reset:s}
+@media(min-width:760px){.steps{grid-template-columns:repeat(4,1fr)}}
+.steps li{counter-increment:s;padding-top:1rem;border-top:3px solid var(--violet)}
+.steps li:before{content:counter(s);font:800 1.6rem Unbounded,sans-serif;color:var(--lilac);display:block;margin-bottom:.4rem}
+.steps b{display:block;margin-bottom:.2rem}
+.steps span{color:var(--mute);font-size:.97rem}
+
+/* sobre mi */
+.about{display:grid;gap:2rem;align-items:center}
+@media(min-width:760px){.about{grid-template-columns:300px 1fr}}
+.about .ph{aspect-ratio:1}
+.about p{margin-bottom:1rem;max-width:56ch}
+
+/* contacto */
+.contact{background:var(--panel);border-top:1px solid var(--line);text-align:left}
+.contact .row{display:flex;flex-wrap:wrap;gap:.8rem;margin:1.5rem 0}
+.contact dl{display:grid;gap:.3rem;color:var(--mute)}
+.contact dt{color:var(--text);font-weight:600}
+footer{padding:1.6rem 0;color:var(--mute);font-size:.9rem;border-top:1px solid var(--line)}
+
+@media(prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto!important;transition:none!important}.flash{display:none}}
+</style>
+</head>
+<body>
+<div class="flash" aria-hidden="true"></div>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="#inicio">AxoloteShoots</a>
+    <nav aria-label="Principal">
+      <a href="#servicios">Servicios</a>
+      <a href="#portafolio">Portafolio</a>
+      <a href="#proceso">Cómo funciona</a>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a class="btn sm" href="#contacto">Escríbeme</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="inicio">
+  <div class="wrap">
+    <div class="vf">
+      <i></i><i></i><i></i><i></i>
+      <h1 class="gt">AxoloteShoots</h1>
+      <p>Retratos, catálogos para emprendedores y fotos artísticas. Oriente de CDMX y Estado de México.</p>
+      <div class="row">
+        <a class="btn" href="https://wa.me/529987667795?text=Hola%2C%20vi%20tu%20p%C3%A1gina%20de%20AxoloteShoots%20y%20quiero%20una%20sesi%C3%B3n" target="_blank" rel="noopener">Escríbeme por WhatsApp</a>
+        <a class="btn ghost" href="#servicios">Ver servicios</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="servicios">
+  <div class="wrap">
+    <h2>Lo que hago</h2>
+    <p class="lead">Tres formas de trabajar juntos. Los precios están claros desde aquí, sin letras chiquitas.</p>
+
+    <div class="sv">
+      <article class="card wide">
+        <h3>Sesiones de retrato</h3>
+        <p>Una sesión tranquila, con buena luz y sin poses forzadas. Tú decides cómo pagarla.</p>
+        <div class="opts">
+          <div class="opt">
+            <small>Paquete cerrado</small>
+            <div class="price">$2,500</div>
+            <p>20 fotos digitales. La sesión dura 1 hora con 15 minutos.</p>
+          </div>
+          <div class="opt">
+            <small>Sesión gratis, pagas solo las fotos que quieras</small>
+            <div class="price">$180 <span style="font-size:.5em">por foto</span></div>
+            <p>Desde 30 fotos, cada una baja a $100.</p>
+          </div>
+        </div>
+        <p class="note">Si ya sabes que quieres varias fotos, el paquete de 20 te sale mejor.</p>
+        <br>
+        <a class="btn sm" href="https://wa.me/529987667795?text=Hola%2C%20quiero%20una%20sesi%C3%B3n%20de%20retrato" target="_blank" rel="noopener">Quiero un retrato</a>
+      </article>
+
+      <article class="card">
+        <h3>Catálogos para emprendedores</h3>
+        <div class="price">$3,500</div>
+        <p style="margin-bottom:0">Para que tus productos se vean tan bien como están hechos.</p>
+        <ul class="chk">
+          <li>Hasta 10 productos, una foto por cada uno.</li>
+          <li>Catálogo en PDF con descripción, foto y precio.</li>
+          <li>Hasta 2 cambios incluidos, sobre todo de precios.</li>
+          <li>5 fotos extra de tu proceso, de ti como artesano o fabricante, o de tu lugar de trabajo.</li>
+          <li>La sesión es donde te quede mejor: tu casa, taller u oficina, o en mi estudio (ahí me prestas los productos, si se puede).</li>
+        </ul>
+        <small style="color:var(--mute)">Se paga en tres partes</small>
+        <div class="pay">
+          <div><b>50%</b>$1,750 al inicio</div>
+          <div><b>25%</b>$875 con el avance</div>
+          <div><b>25%</b>$875 en la entrega</div>
+        </div>
+        <a class="btn sm" href="https://wa.me/529987667795?text=Hola%2C%20quiero%20cotizar%20un%20cat%C3%A1logo%20para%20mi%20negocio" target="_blank" rel="noopener">Quiero mi catálogo</a>
+      </article>
+
+      <article class="card">
+        <h3>Fotos artísticas y colaboraciones</h3>
+        <p>Esta parte es para divertirnos los dos. La sesión es gratis y hay dos caminos:</p>
+        <ul class="chk">
+          <li>Compras las fotos que te gusten.</li>
+          <li>Colaboramos: yo pongo las fotos y tú pones el modelaje, la locación, el maquillaje y lo que haga falta.</li>
+        </ul>
+        <p style="margin-bottom:.6rem"><b>Nudotipia.</b> Es mi proyecto de fotografía erótica y boudoir, incluyendo fotos para OnlyFans. Tendrá su propia página muy pronto. Mientras tanto, escríbeme y te cuento cómo se trabaja.</p>
+        <!-- Cuando exista la página de Nudotipia, cambia el href de abajo por su link y quita target si quieres -->
+        <a class="btn sm" href="https://wa.me/529987667795?text=Hola%2C%20quiero%20saber%20m%C3%A1s%20de%20Nudotipia" target="_blank" rel="noopener">Pregúntame por Nudotipia</a>
+        <p class="adult">Nudotipia es solo para mayores de 18 años.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="portafolio">
+  <div class="wrap">
+    <div class="ph-head">
+      <div>
+        <h2>Mini portafolio</h2>
+        <p class="lead">Un vistazo a lo que hago. Desliza o usa las flechas.</p>
+      </div>
+      <div class="arrows">
+        <button type="button" id="prev" aria-label="Foto anterior">‹</button>
+        <button type="button" id="next" aria-label="Foto siguiente">›</button>
+      </div>
+    </div>
+    <!-- Sube tus fotos a la carpeta img/ con estos nombres, o cambia los src. Mientras no existan, se ve un recuadro de color. -->
+    <div class="car" id="car" tabindex="0" aria-label="Carrusel de fotos">
+      <figure class="slide"><div class="ph">Foto de retrato<img src="img/retrato-1.jpg" alt="Retrato por AxoloteShoots" onerror="this.remove()"></div><figcaption>Retrato</figcaption></figure>
+      <figure class="slide"><div class="ph">Foto de producto<img src="img/catalogo-1.jpg" alt="Foto de producto artesanal por AxoloteShoots" onerror="this.remove()"></div><figcaption>Catálogo</figcaption></figure>
+      <figure class="slide"><div class="ph">Foto artística<img src="img/artistico-1.jpg" alt="Foto artística por AxoloteShoots" onerror="this.remove()"></div><figcaption>Artístico</figcaption></figure>
+      <figure class="slide"><div class="ph">Foto de retrato<img src="img/retrato-2.jpg" alt="Retrato por AxoloteShoots" onerror="this.remove()"></div><figcaption>Retrato</figcaption></figure>
+      <figure class="slide"><div class="ph">Foto de proceso<img src="img/catalogo-2.jpg" alt="Artesano trabajando, foto de AxoloteShoots" onerror="this.remove()"></div><figcaption>Catálogo, proceso</figcaption></figure>
+      <figure class="slide"><div class="ph">Foto artística<img src="img/artistico-2.jpg" alt="Foto artística por AxoloteShoots" onerror="this.remove()"></div><figcaption>Artístico</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section id="proceso">
+  <div class="wrap">
+    <h2>Cómo funciona</h2>
+    <p class="lead">Es sencillo, y no tienes que saber de fotografía.</p>
+    <ol class="steps">
+      <li><b>Me escribes</b><span>Cuéntame qué buscas y para cuándo.</span></li>
+      <li><b>Nos ponemos de acuerdo</b><span>Elegimos servicio, lugar y fecha.</span></li>
+      <li><b>Hacemos la sesión</b><span>Con calma y buena onda. Yo te guío.</span></li>
+      <li><b>Recibes tus fotos</b><span>Digitales, o tu catálogo en PDF.</span></li>
+    </ol>
+  </div>
+</section>
+
+<section id="sobre-mi">
+  <div class="wrap about">
+    <div class="ph">Tu foto aquí<img src="img/axolote.jpg" alt="Axolote, fotógrafo detrás de AxoloteShoots" onerror="this.remove()"></div>
+    <div>
+      <h2>Soy Axolote</h2>
+      <p>Soy fotógrafo y aprendí por mi cuenta, a base de probar, fallar y volver a intentar. Antes era baterista.</p>
+      <p>También hago cianotipia y doy clases de fotografía. Vivo y trabajo en el oriente de CDMX y Estado de México.</p>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contacto">
+  <div class="wrap">
+    <h2>Platiquemos</h2>
+    <p class="lead">Cuéntame tu idea y vemos cómo hacerla. Respondo por WhatsApp o Instagram.</p>
+    <div class="row">
+      <a class="btn" href="https://wa.me/529987667795" target="_blank" rel="noopener">WhatsApp 998 766 7795</a>
+      <a class="btn ghost" href="https://instagram.com/AxoloteShoots" target="_blank" rel="noopener">Instagram @AxoloteShoots</a>
+    </div>
+    <dl>
+      <dt>Zona</dt>
+      <dd>Oriente de CDMX y Estado de México</dd>
+    </dl>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">© 2026 AxoloteShoots. Todas las fotos son de mi autoría.</div>
+</footer>
+
+<script>
+(function(){
+  var car=document.getElementById('car');
+  var calm=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function go(d){
+    var s=car.querySelector('.slide');
+    car.scrollBy({left:d*(s.offsetWidth+16),behavior:calm?'auto':'smooth'});
+  }
+  document.getElementById('prev').addEventListener('click',function(){go(-1)});
+  document.getElementById('next').addEventListener('click',function(){go(1)});
+  car.addEventListener('keydown',function(e){
+    if(e.key==='ArrowRight'){e.preventDefault();go(1)}
+    if(e.key==='ArrowLeft'){e.preventDefault();go(-1)}
+  });
+})();
+</script>
+</body>
+</html>
